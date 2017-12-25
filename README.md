@@ -37,7 +37,7 @@ we run 10 text posts on facebook and upload data from this running. you can lear
 Built With
 
 Appium Server
-Maven - Dependency Management
+Maven - Dependency Management 
 Android Studio - Used to run the tests (all test are written in java selenium)
 
 
