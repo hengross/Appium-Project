@@ -1,0 +1,807 @@
+[info] [Appium] Welcome to Appium v1.7.1
+[info] [Appium] Appium REST http interface listener started on 0.0.0.0:4723[info] [HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"browserName":"Chrome","platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"browserName":"Chrome","platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"},null,null]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1514141793679 (20:56:33 GMT+0200 (Jerusalem Standard Time))
+[info] [Appium] Creating new AndroidDriver (v1.28.1) session
+[info] [Appium] Capabilities:
+[info] [Appium]   browserName: 'Chrome'
+[info] [Appium]   platformName: 'Android'
+[info] [Appium]   deviceName: 'emulator-5554'
+[info] [Appium]   platformVersion: '7.1.2'
+[info] [BaseDriver] Session created with session id: bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[debug] [AndroidDriver] Getting Java version[info] [AndroidDriver] Java version is: 1.8.0_144
+[info] [AndroidDriver] We're going to run a Chrome-based session
+[info] [AndroidDriver] Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
+[info] [ADB] Checking whether adb is present
+[info] [ADB] Using adb.exe from C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe
+[info] [AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[info] [AndroidDriver] Looking for a device with Android '7.1.2'
+[debug] [ADB] Setting device id to 61925e10
+[info] [ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.release"][debug] [ADB] Current device property 'ro.build.version.release': 7.1.2
+[info] [AndroidDriver] Using device: 61925e10
+[info] [ADB] Checking whether adb is present
+[info] [ADB] Using adb.exe from C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe
+[debug] [ADB] Setting device id to 61925e10
+[info] [AndroidDriver] App file was not listed, instead we're going to run com.android.chrome directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","list","packages","com.android.chrome"][info] [AndroidDriver] Starting Android session
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","wait-for-device"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","echo","ping"][debug] [Logcat] Starting logcat capture[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Uninstalling and re-installing 'io.appium.settings'
+[debug] [ADB] Uninstalling io.appium.settings
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","list","packages","io.appium.settings"][debug] [ADB] App is installed
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.settings"][debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","uninstall","io.appium.settings"][debug] [ADB] ADB command output: Success
+[info] [ADB] io.appium.settings was successfully uninstalled
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","list","packages","io.appium.settings"][debug] [ADB] App is not installed
+[debug] [ADB] App 'C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\io.appium.settings\app\build\outputs\apk\settings_apk-debug.apk' not installed. Installing
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","install","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\io.appium.settings\\app\\build\\outputs\\apk\\settings_apk-debug.apk"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.sdk"][debug] [ADB] Current device property 'ro.build.version.sdk': 25
+[debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","dumpsys","package","io.appium.settings"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","dump","io.appium.settings"][debug] [ADB] Got the following command chunks to execute: pm,grant,io.appium.settings,android.permission.READ_PHONE_STATE,;,pm,grant,io.appium.settings,android.permission.WRITE_SETTINGS,;,pm,grant,io.appium.settings,android.permission.ACCESS_FINE_LOCATION,;,pm,grant,io.appium.settings,android.permission.ACCESS_COARSE_LOCATION,;,pm,grant,io.appium.settings,android.permission.ACCESS_MOCK_LOCATION,;,pm,grant,io.appium.settings,android.permission.SET_ANIMATION_SCALE,;
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","grant","io.appium.settings","android.permission.READ_PHONE_STATE",";","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_COARSE_LOCATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";","pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";"][debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","ps"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.settings/.Settings","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","appops","set","io.appium.settings","android:mock_location","allow"][debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","install","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"][debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","install","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"][debug] [ADB] Application 'C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-unlock\bin\unlock_apk-debug.apk' already installed. Continuing.
+[info] [ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.release"][debug] [ADB] Current device property 'ro.build.version.release': 7.1.2
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","wm","size"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.product.model"][debug] [ADB] Current device property 'ro.product.model': A0001
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.product.manufacturer"][debug] [ADB] Current device property 'ro.product.manufacturer': OnePlus
+[warn] [AndroidDriver] No app sent in, not parsing package/activity
+[debug] [AndroidDriver] No app capability. Assuming it is already on the device
+[debug] [AndroidDriver] Running fast reset (stop and clear)
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","com.android.chrome"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","clear","com.android.chrome"][debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","push","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"][debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","ps"][info] [ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","61925e10","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.chrome","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [UiAutomator] Moving to state 'online'
+[info] [AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","dumpsys","window"][info] [AndroidDriver] Screen already unlocked, doing nothing
+[info] [AndroidDriver] Starting a chrome-based browser session
+[debug] [AndroidDriver] A port was not given, using random port: 8000
+[debug] [Chromedriver] Changed state to 'starting'
+[info] [Chromedriver] Set chromedriver binary as: C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win\chromedriver.exe
+[debug] [Chromedriver] Killing any old chromedrivers, running: FOR /F "usebackq tokens=5" %a in (`netstat -nao ^| findstr /R /C:"8000 "`) do (FOR /F "usebackq" %b in (`TASKLIST /FI "PID eq %a" ^| findstr /I chromedriver.exe`) do (IF NOT %b=="" TASKKILL /F /PID %a))
+[warn] [Chromedriver] No old chromedrivers seemed to exist
+[debug] [Chromedriver] Cleaning any old adb forwarded port socket connections
+[debug] [ADB] List forwarding ports
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","forward","--list"][info] [Chromedriver] Spawning chromedriver with: C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win\chromedriver.exe --url-base=wd/hub --port=8000 --adb-port=5037 --verbose[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8000/wd/hub/status] with no body[debug] [Chromedriver] Webview version: 'Chrome/63.0.3239.111'[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41)"},"cssSelectorsEnabled":true,"databaseEnabled":false,"handlesAlerts":true,"hasTouchScreen":true,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"pageLoadStrategy":"normal","platform":"ANDROID","rotatable":false,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"63.0.3239.111","webStorageEnabled":true}}
+[debug] [Chromedriver] Changed state to 'online'
+[info] [Appium] New AndroidDriver session created successfully, session bb1ff97c-38bc-4894-bdf6-bb8c5f44403f added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1514141833984 (20:57:13 GMT+0200 (Jerusalem Standard Time))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"},"browserName":"Chrome","platformName":"Android","deviceName":"61925e10","platformVersion":"7.1.2","deviceUDID":"61925e10","deviceScreenSize":"1080x1920","deviceModel":"A0001","deviceManufacturer":"OnePlus"}
+[info] [HTTP] <-- POST /wd/hub/session 200 40320 ms - 588 [info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/timeouts/implicit_wait {"ms":30000}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/timeouts/implicit_wait] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/timeouts/implicit_wait] with body: {"ms":30000}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/timeouts/implicit_wait 200 15 ms - 76 
+[info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/url {"url":"https://www.facebook.com"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/url] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/url] with body: {"url":"https://www.facebook.com"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/url 200 2886 ms - 76 
+[info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element {"using":"id","value":"m_login_email"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element] with body: {"using":"id","value":"m_login_email"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":{"ELEMENT":"0.32851025043618653-1"}}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element 200 131 ms - 107 [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.32851025043618653-1/value 200 1164 ms - 76 [info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element {"using":"name","value":"pass"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element] with body: {"using":"name","value":"pass"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":{"ELEMENT":"0.32851025043618653-2"}}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element 200 97 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.32851025043618653-2/value {"id":"0.32851025043618653-2","value":["Info.Media"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.32851025043618653-2/value] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element/0.32851025043618653-2/value] with body: {"id":"0.32851025043618653-2","value":["Info.Media"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.32851025043618653-2/value 200 690 ms - 76 [info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element {"using":"name","value":"login"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element] with body: {"using":"name","value":"login"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":{"ELEMENT":"0.32851025043618653-3"}}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element 200 129 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.32851025043618653-3/click {"id":"0.32851025043618653-3"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.32851025043618653-3/click] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element/0.32851025043618653-3/click] with body: {"id":"0.32851025043618653-3"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.32851025043618653-3/click 200 415 ms - 76 [info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/elements {"using":"xpath","value":"//*[contains(text(),'Log In With One Tap')]"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/elements] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/elements] with body: {"using":"xpath","value":"//*[contains(text(),'Log In With One Tap')]"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":[{"ELEMENT":"0.658360133328626-1"}]}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/elements 200 174 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element {"using":"css selector","value":"#root > div._4g33 > div > div > div._4g33._2pip > div:nth-child(2) > form > div > button"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element] with body: {"using":"css selector","value":"#root > div._4g33 > div > div > div._4g33._2pip > div:nth-child(2) > form > div > button"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":{"ELEMENT":"0.658360133328626-2"}}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element 200 117 ms - 105 
+[info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.658360133328626-2/click {"id":"0.658360133328626-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.658360133328626-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element/0.658360133328626-2/click] with body: {"id":"0.658360133328626-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.658360133328626-2/click 200 3913 ms - 76 [info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element] with body: {"using":"name","value":"xc_message"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":{"ELEMENT":"0.7593599074293209-1"}}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element 200 110 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.7593599074293209-1/value {"id":"0.7593599074293209-1","value":["hey everyone! the time now is 2017.12.24-20:57:50"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.7593599074293209-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element/0.7593599074293209-1/value] with body: {"id":"0.7593599074293209-1","value":["hey everyone! the time now is 2017.12.24-20:57:50"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.7593599074293209-1/value 200 5318 ms - 76 [info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element] with body: {"using":"name","value":"view_post"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":{"ELEMENT":"0.7593599074293209-2"}}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element 200 95 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.7593599074293209-2/click {"id":"0.7593599074293209-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.7593599074293209-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element/0.7593599074293209-2/click] with body: {"id":"0.7593599074293209-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.7593599074293209-2/click 200 3273 ms - 76 [info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element] with body: {"using":"name","value":"xc_message"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":{"ELEMENT":"0.8275521318305634-1"}}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element 200 53 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.8275521318305634-1/value {"id":"0.8275521318305634-1","value":["hey everyone! the time now is 2017.12.24-20:58:10"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.8275521318305634-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element/0.8275521318305634-1/value] with body: {"id":"0.8275521318305634-1","value":["hey everyone! the time now is 2017.12.24-20:58:10"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.8275521318305634-1/value 200 5427 ms - 76 [info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element] with body: {"using":"name","value":"view_post"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":{"ELEMENT":"0.8275521318305634-2"}}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element 200 75 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.8275521318305634-2/click {"id":"0.8275521318305634-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.8275521318305634-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1/element/0.8275521318305634-2/click] with body: {"id":"0.8275521318305634-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a11d32ad31b2f501817dc53c11e9a8d1","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a11d32ad31b2f501817dc53c11e9a8d1 with bb1ff97c-38bc-4894-bdf6-bb8c5f44403f
+[info] [HTTP] <-- POST /wd/hub/session/bb1ff97c-38bc-4894-bdf6-bb8c5f44403f/element/0.8275521318305634-2/click 200 3457 ms - 76 [warn] [BaseDriver] Shutting down because we waited 60 seconds for a command
+[debug] [AndroidDriver] Shutting down Android driver
+[warn] [Appium] Closing session, cause was 'New Command Timeout of 60 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[info] [Appium] Removing session bb1ff97c-38bc-4894-bdf6-bb8c5f44403f from our master session list
+[debug] [AndroidDriver] Stopping chromedriver for context CHROMIUM
+[debug] [Chromedriver] Changed state to 'stopping'
+[debug] [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8000/wd/hub/session/a11d32ad31b2f501817dc53c11e9a8d1] with no body[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"a11d32ad31b2f501817dc53c11e9a8d1\",\"status\":0,\"value\":null}"
+[debug] [Chromedriver] Changed state to 'stopped'
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","input","keyevent",3][debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 137.678
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","ps"][info] [ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.[info] [HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"browserName":"Chrome","platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"browserName":"Chrome","platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"},null,null]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1514145840159 (22:04:00 GMT+0200 (Jerusalem Standard Time))
+[info] [Appium] Creating new AndroidDriver (v1.28.1) session
+[info] [Appium] Capabilities:
+[info] [Appium]   browserName: 'Chrome'
+[info] [Appium]   platformName: 'Android'
+[info] [Appium]   deviceName: 'emulator-5554'
+[info] [Appium]   platformVersion: '7.1.2'
+[info] [BaseDriver] Session created with session id: 1710e650-dc05-4a4c-b51d-892bd32cc982
+[debug] [AndroidDriver] Getting Java version[info] [AndroidDriver] Java version is: 1.8.0_144
+[info] [AndroidDriver] We're going to run a Chrome-based session
+[info] [AndroidDriver] Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
+[info] [ADB] Checking whether adb is present
+[info] [ADB] Using adb.exe from C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe
+[info] [AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[info] [AndroidDriver] Looking for a device with Android '7.1.2'
+[debug] [ADB] Setting device id to 61925e10
+[info] [ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.release"][debug] [ADB] Current device property 'ro.build.version.release': 7.1.2
+[info] [AndroidDriver] Using device: 61925e10
+[info] [ADB] Checking whether adb is present
+[info] [ADB] Using adb.exe from C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe
+[debug] [ADB] Setting device id to 61925e10
+[info] [AndroidDriver] App file was not listed, instead we're going to run com.android.chrome directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","list","packages","com.android.chrome"][info] [AndroidDriver] Starting Android session
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","wait-for-device"][debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","echo","ping"][debug] [Logcat] Starting logcat capture[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Uninstalling and re-installing 'io.appium.settings'
+[debug] [ADB] Uninstalling io.appium.settings
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","list","packages","io.appium.settings"][debug] [ADB] App is installed
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.settings"][debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","uninstall","io.appium.settings"][debug] [ADB] ADB command output: Success
+[info] [ADB] io.appium.settings was successfully uninstalled
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...[debug] [ADB] App is not installed
+[debug] [ADB] App 'C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\io.appium.settings\app\build\outputs\apk\settings_apk-debug.apk' not installed. Installing
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","install","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\io.appium.settings\\app\\build\\outputs\\apk\\settings_apk-debug.apk"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.sdk"][debug] [ADB] Current device property 'ro.build.version.sdk': 25
+[debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","dumpsys","package","io.appium.settings"][debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","dump","io.appium.settings"][debug] [ADB] Got the following command chunks to execute: pm,grant,io.appium.settings,android.permission.READ_PHONE_STATE,;,pm,grant,io.appium.settings,android.permission.WRITE_SETTINGS,;,pm,grant,io.appium.settings,android.permission.ACCESS_FINE_LOCATION,;,pm,grant,io.appium.settings,android.permission.ACCESS_COARSE_LOCATION,;,pm,grant,io.appium.settings,android.permission.ACCESS_MOCK_LOCATION,;,pm,grant,io.appium.settings,android.permission.SET_ANIMATION_SCALE,;
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","grant","io.appium.settings","android.permission.READ_PHONE_STATE",";","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_COARSE_LOCATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";","pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","ps"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.settings/.Settings","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","appops","set","io.appium.settings","android:mock_location","allow"][debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","install","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"][debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","install","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"][debug] [ADB] Application 'C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-unlock\bin\unlock_apk-debug.apk' already installed. Continuing.
+[info] [ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.release"][debug] [ADB] Current device property 'ro.build.version.release': 7.1.2
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","wm","size"][debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.product.model"][debug] [ADB] Current device property 'ro.product.model': A0001
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.product.manufacturer"][debug] [ADB] Current device property 'ro.product.manufacturer': OnePlus
+[warn] [AndroidDriver] No app sent in, not parsing package/activity
+[debug] [AndroidDriver] No app capability. Assuming it is already on the device
+[debug] [AndroidDriver] Running fast reset (stop and clear)
+[debug] [ADB] Getting connected devices...[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","clear","com.android.chrome"][debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","push","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"][debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","ps"][info] [ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","61925e10","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.chrome","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [UiAutomator] Moving to state 'online'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[info] [AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","dumpsys","window"][debug] [AndroidDriver] Screen is locked, trying to unlock
+[warn] [AndroidDriver] Using app unlock, this is going to be deprecated!
+[info] [AndroidDriver] Unlocking screen
+[debug] [ADB] Getting connected devices...[debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][error] [ADB] Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+ Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)[debug] [AndroidDriver] Screen is locked, trying to unlock
+[warn] [AndroidDriver] Using app unlock, this is going to be deprecated!
+[info] [AndroidDriver] Unlocking screen
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [AndroidBootstrap] Emitting alert message...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Emitting system alert message[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][error] [ADB] Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+ Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)[debug] [AndroidDriver] Screen is locked, trying to unlock
+[warn] [AndroidDriver] Using app unlock, this is going to be deprecated!
+[info] [AndroidDriver] Unlocking screen
+[debug] [ADB] Getting connected devices...[debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [AndroidBootstrap] Emitting alert message...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Emitting system alert message[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][error] [ADB] Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+ Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)[debug] [AndroidDriver] Screen is locked, trying to unlock
+[warn] [AndroidDriver] Using app unlock, this is going to be deprecated!
+[info] [AndroidDriver] Unlocking screen
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [AndroidBootstrap] Emitting alert message...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Emitting system alert message[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][error] [ADB] Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+ Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)[debug] [AndroidDriver] Screen is locked, trying to unlock
+[warn] [AndroidDriver] Using app unlock, this is going to be deprecated!
+[info] [AndroidDriver] Unlocking screen
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [AndroidBootstrap] Emitting alert message...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Emitting system alert message[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][error] [ADB] Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+ Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)[debug] [AndroidDriver] Screen is locked, trying to unlock
+[warn] [AndroidDriver] Using app unlock, this is going to be deprecated!
+[info] [AndroidDriver] Unlocking screen
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [AndroidBootstrap] Emitting alert message...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Emitting system alert message[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][error] [ADB] Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+ Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)[debug] [AndroidDriver] Screen is locked, trying to unlock
+[warn] [AndroidDriver] Using app unlock, this is going to be deprecated!
+[info] [AndroidDriver] Unlocking screen
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [AndroidBootstrap] Emitting alert message...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Emitting system alert message[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][error] [ADB] Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+ Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)[debug] [AndroidDriver] Screen is locked, trying to unlock
+[warn] [AndroidDriver] Using app unlock, this is going to be deprecated!
+[info] [AndroidDriver] Unlocking screen
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [AndroidBootstrap] Emitting alert message...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Emitting system alert message[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][error] [ADB] Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+ Error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Amit\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 61925e10 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null'
+    at Object.wrappedLogger.errorAndThrow (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-support\lib\logging.js:63:13)
+    at ADB.callee$0$0$ (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:101:9)
+    at tryCatch (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)[debug] [AndroidDriver] Screen is locked, trying to unlock
+[warn] [AndroidDriver] Using app unlock, this is going to be deprecated!
+[info] [AndroidDriver] Unlocking screen
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [AndroidBootstrap] Emitting alert message...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Emitting system alert message[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","start","-W","-n","io.appium.unlock/.Unlock","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","dumpsys","window"][debug] [AndroidDriver] Screen unlocked successfully
+[info] [AndroidDriver] Starting a chrome-based browser session
+[debug] [AndroidDriver] A port was not given, using random port: 8000
+[debug] [Chromedriver] Changed state to 'starting'
+[info] [Chromedriver] Set chromedriver binary as: C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win\chromedriver.exe
+[debug] [Chromedriver] Killing any old chromedrivers, running: FOR /F "usebackq tokens=5" %a in (`netstat -nao ^| findstr /R /C:"8000 "`) do (FOR /F "usebackq" %b in (`TASKLIST /FI "PID eq %a" ^| findstr /I chromedriver.exe`) do (IF NOT %b=="" TASKKILL /F /PID %a))
+[warn] [Chromedriver] No old chromedrivers seemed to exist
+[debug] [Chromedriver] Cleaning any old adb forwarded port socket connections
+[debug] [ADB] List forwarding ports
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","forward","--list"]
+[info] [Chromedriver] Spawning chromedriver with: C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win\chromedriver.exe --url-base=wd/hub --port=8000 --adb-port=5037 --verbose[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8000/wd/hub/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"\",\"status\":0,\"value\":{\"build\":{\"version\":\"alpha\"},\"os\":{\"arch\":\"x86_64\",\"name\":\"Windows NT\",\"version\":\"10.0.15063\"}}}"
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8000/wd/hub/session] with body: {"desiredCapabilities":{"chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"61925e10"}}}[debug] [Chromedriver] Webview version: 'Chrome/63.0.3239.111'[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41)"},"cssSelectorsEnabled":true,"databaseEnabled":false,"handlesAlerts":true,"hasTouchScreen":true,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"pageLoadStrategy":"normal","platform":"ANDROID","rotatable":false,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"63.0.3239.111","webStorageEnabled":true}}
+[debug] [Chromedriver] Changed state to 'online'
+[info] [Appium] New AndroidDriver session created successfully, session 1710e650-dc05-4a4c-b51d-892bd32cc982 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1514146258634 (22:10:58 GMT+0200 (Jerusalem Standard Time))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"},"browserName":"Chrome","platformName":"Android","deviceName":"61925e10","platformVersion":"7.1.2","deviceUDID":"61925e10","deviceScreenSize":"1080x1920","deviceModel":"A0001","deviceManufacturer":"OnePlus"}
+[info] [HTTP] <-- POST /wd/hub/session 200 418487 ms - 588 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/timeouts/implicit_wait {"ms":30000}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/timeouts/implicit_wait] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/timeouts/implicit_wait] with body: {"ms":30000}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/timeouts/implicit_wait 200 8 ms - 76 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/url {"url":"https://www.facebook.com"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/url] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/url] with body: {"url":"https://www.facebook.com"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/url 200 2632 ms - 76 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"id","value":"m_login_email"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"id","value":"m_login_email"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.36645362533641723-1"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 81 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.36645362533641723-1/value {"id":"0.36645362533641723-1","value":["cyber.infom1.il@gmail.com"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.36645362533641723-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.36645362533641723-1/value] with body: {"id":"0.36645362533641723-1","value":["cyber.infom1.il@gmail.com"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.36645362533641723-1/value 200 1212 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"pass"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"pass"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.36645362533641723-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 90 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.36645362533641723-2/value {"id":"0.36645362533641723-2","value":["Info.Media"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.36645362533641723-2/value] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.36645362533641723-2/value] with body: {"id":"0.36645362533641723-2","value":["Info.Media"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.36645362533641723-2/value 200 693 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"login"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"login"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.36645362533641723-3"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 112 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.36645362533641723-3/click {"id":"0.36645362533641723-3"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.36645362533641723-3/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.36645362533641723-3/click] with body: {"id":"0.36645362533641723-3"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.36645362533641723-3/click 200 426 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/elements {"using":"xpath","value":"//*[contains(text(),'Log In With One Tap')]"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/elements] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/elements] with body: {"using":"xpath","value":"//*[contains(text(),'Log In With One Tap')]"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":[{"ELEMENT":"0.3654704959474424-1"}]}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/elements 200 134 ms - 108 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"css selector","value":"#root > div._4g33 > div > div > div._4g33._2pip > div:nth-child(2) > form > div > button"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"css selector","value":"#root > div._4g33 > div > div > div._4g33._2pip > div:nth-child(2) > form > div > button"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.3654704959474424-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 86 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.3654704959474424-2/click {"id":"0.3654704959474424-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.3654704959474424-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.3654704959474424-2/click] with body: {"id":"0.3654704959474424-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.3654704959474424-2/click 200 4167 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"xc_message"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.29989963246882456-1"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 88 ms - 107 [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.29989963246882456-1/value 200 5050 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"view_post"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.29989963246882456-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 103 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.29989963246882456-2/click {"id":"0.29989963246882456-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.29989963246882456-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.29989963246882456-2/click] with body: {"id":"0.29989963246882456-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.29989963246882456-2/click 200 3718 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"xc_message"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.9323531420607718-1"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 63 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9323531420607718-1/value {"id":"0.9323531420607718-1","value":["hey everyone! the time now is 2017.12.24-22:11:55"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9323531420607718-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.9323531420607718-1/value] with body: {"id":"0.9323531420607718-1","value":["hey everyone! the time now is 2017.12.24-22:11:55"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9323531420607718-1/value 200 5526 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"view_post"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.9323531420607718-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 46 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9323531420607718-2/click {"id":"0.9323531420607718-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9323531420607718-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.9323531420607718-2/click] with body: {"id":"0.9323531420607718-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9323531420607718-2/click 200 3773 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"xc_message"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.6387354358964266-1"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 58 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.6387354358964266-1/value {"id":"0.6387354358964266-1","value":["hey everyone! the time now is 2017.12.24-22:12:15"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.6387354358964266-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.6387354358964266-1/value] with body: {"id":"0.6387354358964266-1","value":["hey everyone! the time now is 2017.12.24-22:12:15"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.6387354358964266-1/value 200 5517 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"view_post"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.6387354358964266-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 72 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.6387354358964266-2/click {"id":"0.6387354358964266-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.6387354358964266-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.6387354358964266-2/click] with body: {"id":"0.6387354358964266-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.6387354358964266-2/click 200 3643 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"xc_message"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.11314508309444005-1"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 70 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.11314508309444005-1/value {"id":"0.11314508309444005-1","value":["hey everyone! the time now is 2017.12.24-22:12:35"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.11314508309444005-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.11314508309444005-1/value] with body: {"id":"0.11314508309444005-1","value":["hey everyone! the time now is 2017.12.24-22:12:35"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.11314508309444005-1/value 200 5139 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"view_post"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.11314508309444005-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 55 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.11314508309444005-2/click {"id":"0.11314508309444005-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.11314508309444005-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.11314508309444005-2/click] with body: {"id":"0.11314508309444005-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.11314508309444005-2/click 200 3635 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"xc_message"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.904194543166732-1"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 57 ms - 105 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.904194543166732-1/value {"id":"0.904194543166732-1","value":["hey everyone! the time now is 2017.12.24-22:12:55"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.904194543166732-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.904194543166732-1/value] with body: {"id":"0.904194543166732-1","value":["hey everyone! the time now is 2017.12.24-22:12:55"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.904194543166732-1/value 200 5382 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"view_post"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.904194543166732-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 67 ms - 105 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.904194543166732-2/click {"id":"0.904194543166732-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.904194543166732-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.904194543166732-2/click] with body: {"id":"0.904194543166732-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.904194543166732-2/click 200 3051 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"xc_message"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.5283313217184722-1"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 64 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.5283313217184722-1/value {"id":"0.5283313217184722-1","value":["hey everyone! the time now is 2017.12.24-22:13:15"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.5283313217184722-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.5283313217184722-1/value] with body: {"id":"0.5283313217184722-1","value":["hey everyone! the time now is 2017.12.24-22:13:15"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.5283313217184722-1/value 200 5334 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"view_post"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.5283313217184722-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 56 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.5283313217184722-2/click {"id":"0.5283313217184722-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.5283313217184722-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.5283313217184722-2/click] with body: {"id":"0.5283313217184722-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.5283313217184722-2/click 200 4087 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"xc_message"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.7229585392120919-1"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 74 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7229585392120919-1/value {"id":"0.7229585392120919-1","value":["hey everyone! the time now is 2017.12.24-22:13:36"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7229585392120919-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.7229585392120919-1/value] with body: {"id":"0.7229585392120919-1","value":["hey everyone! the time now is 2017.12.24-22:13:36"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7229585392120919-1/value 200 5577 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"view_post"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.7229585392120919-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 67 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7229585392120919-2/click {"id":"0.7229585392120919-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7229585392120919-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.7229585392120919-2/click] with body: {"id":"0.7229585392120919-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7229585392120919-2/click 200 3651 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"xc_message"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.44456059540253534-1"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 66 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.44456059540253534-1/value {"id":"0.44456059540253534-1","value":["hey everyone! the time now is 2017.12.24-22:13:56"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.44456059540253534-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.44456059540253534-1/value] with body: {"id":"0.44456059540253534-1","value":["hey everyone! the time now is 2017.12.24-22:13:56"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.44456059540253534-1/value 200 5589 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"view_post"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.44456059540253534-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 55 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.44456059540253534-2/click {"id":"0.44456059540253534-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.44456059540253534-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.44456059540253534-2/click] with body: {"id":"0.44456059540253534-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.44456059540253534-2/click 200 3096 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"xc_message"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.9054907977786721-1"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 61 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9054907977786721-1/value {"id":"0.9054907977786721-1","value":["hey everyone! the time now is 2017.12.24-22:14:16"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9054907977786721-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.9054907977786721-1/value] with body: {"id":"0.9054907977786721-1","value":["hey everyone! the time now is 2017.12.24-22:14:16"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9054907977786721-1/value 200 5218 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"view_post"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.9054907977786721-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 76 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9054907977786721-2/click {"id":"0.9054907977786721-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9054907977786721-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.9054907977786721-2/click] with body: {"id":"0.9054907977786721-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.9054907977786721-2/click 200 3317 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"xc_message"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.7711189097017037-1"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 54 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7711189097017037-1/value {"id":"0.7711189097017037-1","value":["hey everyone! the time now is 2017.12.24-22:14:36"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7711189097017037-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.7711189097017037-1/value] with body: {"id":"0.7711189097017037-1","value":["hey everyone! the time now is 2017.12.24-22:14:36"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7711189097017037-1/value 200 5060 ms - 76 [info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element] with body: {"using":"name","value":"view_post"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":{"ELEMENT":"0.7711189097017037-2"}}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element 200 65 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7711189097017037-2/click {"id":"0.7711189097017037-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7711189097017037-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3/element/0.7711189097017037-2/click] with body: {"id":"0.7711189097017037-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"4dca0c5ecc8d3baf56ae52e7549885b3","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId 4dca0c5ecc8d3baf56ae52e7549885b3 with 1710e650-dc05-4a4c-b51d-892bd32cc982
+[info] [HTTP] <-- POST /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982/element/0.7711189097017037-2/click 200 3123 ms - 76 [info] [HTTP] --> DELETE /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["1710e650-dc05-4a4c-b51d-892bd32cc982"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1514146505390 (22:15:05 GMT+0200 (Jerusalem Standard Time))
+[info] [Appium] Removing session 1710e650-dc05-4a4c-b51d-892bd32cc982 from our master session list
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [AndroidDriver] Stopping chromedriver for context CHROMIUM
+[debug] [Chromedriver] Changed state to 'stopping'
+[debug] [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8000/wd/hub/session/4dca0c5ecc8d3baf56ae52e7549885b3] with no body[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"4dca0c5ecc8d3baf56ae52e7549885b3\",\"status\":0,\"value\":null}"
+[debug] [Chromedriver] Changed state to 'stopped'
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","input","keyevent",3][debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 635.721
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","ps"][info] [ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1514146510960 (22:15:10 GMT+0200 (Jerusalem Standard Time))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[info] [HTTP] <-- DELETE /wd/hub/session/1710e650-dc05-4a4c-b51d-892bd32cc982 200 5577 ms - 76 
