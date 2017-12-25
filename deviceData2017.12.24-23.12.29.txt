@@ -1,0 +1,8 @@
+Start_run_in_epoch_time: 2017.12.24-23.12.29
+OS_name: Android
+OS_version: 4.4.2
+OS architecture: 64bit
+Browser_name: chrome
+Browser_version: 63.0.3239
+User_type: active
+End_run_in_epoch_time: 2017.12.24-23.12.29
