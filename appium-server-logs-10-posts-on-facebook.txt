@@ -1,3 +1,8 @@
+example of appium server log after:
+    1. connecting to device
+    2. posted 10 text posts on facebook
+    3. finished the test
+
 [info] [Appium] Welcome to Appium v1.7.1
 [info] [Appium] Appium REST http interface listener started on 0.0.0.0:4723[info] [HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"browserName":"Chrome","platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"}}
 [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"browserName":"Chrome","platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"},null,null]
