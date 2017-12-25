@@ -1,0 +1,438 @@
+[info] [Appium] Welcome to Appium v1.6.5
+[info] [Appium] Appium REST http interface listener started on 0.0.0.0:4723[info] [HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"browserName":"Chrome","autoDismissAlerts":true,"platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"browserName":"Chrome","autoDismissAlerts":true,"platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"},null,null]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1513752726418 (08:52:06 GMT+0200 (Jerusalem Standard Time))
+[info] [Appium] Creating new AndroidDriver (v1.20.0) session
+[info] [Appium] Capabilities:
+[info] [Appium]   browserName: 'Chrome'
+[info] [Appium]   autoDismissAlerts: true
+[info] [Appium]   platformName: 'Android'
+[info] [Appium]   deviceName: 'emulator-5554'
+[info] [Appium]   platformVersion: '7.1.2'
+[debug] [AndroidDriver] AndroidDriver version: 1.20.0
+[warn] [BaseDriver] The following capabilities were provided, but are not recognized by appium: autoDismissAlerts.
+[info] [BaseDriver] Session created with session id: a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[debug] [AndroidDriver] Getting Java version[info] [AndroidDriver] Java version is: 1.8.0_144
+[info] [AndroidDriver] We're going to run a Chrome-based session
+[info] [AndroidDriver] Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
+[info] [ADB] Checking whether adb is present
+[info] [ADB] Using adb.exe from C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe
+[info] [AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[info] [AndroidDriver] Looking for a device with Android '7.1.2'
+[debug] [ADB] Setting device id to 61925e10
+[info] [ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.release"][info] [AndroidDriver] Using device: 61925e10
+[info] [ADB] Checking whether adb is present
+[info] [ADB] Using adb.exe from C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe
+[debug] [ADB] Setting device id to 61925e10
+[info] [AndroidDriver] App file was not listed, instead we're going to run com.android.chrome directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","list","packages","com.android.chrome"][info] [AndroidDriver] Starting Android session
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","wait-for-device"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","echo","ping"][debug] [Logcat] Starting logcat capture[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","list","packages","io.appium.settings"][debug] [ADB] App is installed
+[debug] [ADB] Getting package info for io.appium.settings
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","dumpsys","package","io.appium.settings"]
+[warn] [ADB] Cannot read version codes of C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\io.appium.settings\app\build\outputs\apk\settings_apk-debug.apk and/or io.appium.settings. Assuming correct app version is already installed
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.sdk"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","dumpsys","package","io.appium.settings"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","dump","io.appium.settings"][debug] [ADB] Got the following command chunks to execute: pm,grant,io.appium.settings,android.permission.WRITE_SETTINGS,;,pm,grant,io.appium.settings,android.permission.ACCESS_MOCK_LOCATION,;
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";"][debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";"][debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","install","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"][debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","install","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"][debug] [ADB] Application 'C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-unlock\bin\unlock_apk-debug.apk' already installed. Continuing.
+[debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","appops","set","io.appium.settings","android:mock_location","allow"][info] [ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","wm","size"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.product.model"][debug] [ADB] Current device property 'ro.product.model': A0001
+[debug] [ADB] Getting connected devices...[debug] [ADB] Current device property 'ro.product.manufacturer': OnePlus
+[warn] [AndroidDriver] No app sent in, not parsing package/activity
+[debug] [AndroidDriver] No app capability. Assuming it is already on the device
+[debug] [AndroidDriver] Running fast reset (stop and clear)
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","com.android.chrome"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","clear","com.android.chrome"][debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","push","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"][debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","ps"][debug] [ADB] Attempting to kill process 18868
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","kill",18868][debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","61925e10","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.chrome","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[error] [UiAutomator] UiAutomator exited unexpectedly with code 4294967183, signal null
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [AndroidDriver] Shutting down Android driver
+[warn] [Appium] Closing session, cause was 'UiAUtomator shut down unexpectedly'
+[info] [Appium] Removing session e55fc26e-fbee-4360-811d-753727c2243c from our master session list
+[debug] [AndroidDriver] Stopping chromedriver for context CHROMIUM
+[debug] [Chromedriver] Changed state to 'stopping'
+[debug] [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8000/wd/hub/session/328e07b69aad6616eee92217f285cec0] with no body[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"328e07b69aad6616eee92217f285cec0\",\"status\":0,\"value\":null}"
+[debug] [Chromedriver] Changed state to 'stopped'
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [UiAutomator] Moving to state 'online'
+[info] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Loading json...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","dumpsys","window"]
+[info] [AndroidDriver] Screen already unlocked, doing nothing
+[info] [AndroidDriver] Starting a chrome-based browser session
+[debug] [AndroidDriver] A port was not given, using random port: 8000
+[debug] [Chromedriver] Changed state to 'starting'
+[info] [Chromedriver] Set chromedriver binary as: C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win\chromedriver.exe
+[info] [Chromedriver] Killing any old chromedrivers, running: FOR /F "usebackq tokens=5" %a in (`netstat -nao ^| findstr /R /C:"8000 "`) do (FOR /F "usebackq" %b in (`TASKLIST /FI "PID eq %a" ^| findstr /I chromedriver.exe`) do (IF NOT %b=="" TASKKILL /F /PID %a))
+[info] [Chromedriver] No old chromedrivers seemed to exist
+[info] [Chromedriver] Spawning chromedriver with: C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win\chromedriver.exe --url-base=wd/hub --port=8000 --adb-port=5037[info] [Chromedriver] [STDOUT] Starting ChromeDriver 2.28.455520 (cc17746adff54984afff480136733114c6b3704b) on port 8000
+Only local connections are allowed.
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8000/wd/hub/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"\",\"status\":0,\"value\":{\"build\":{\"version\":\"alpha\"},\"os\":{\"arch\":\"x86_64\",\"name\":\"Windows NT\",\"version\":\"10.0.15063\"}}}"
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8000/wd/hub/session] with body: {"desiredCapabilities":{"chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"61925e10"}}}[warn] [AndroidBootstrap] Cannot shut down Android bootstrap; it has already shut down
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.28.455520 (cc17746adff54984afff480136733114c6b3704b)"},"cssSelectorsEnabled":true,"databaseEnabled":false,"handlesAlerts":true,"hasTouchScreen":true,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"pageLoadStrategy":"normal","platform":"ANDROID","rotatable":false,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"63.0.3239.111","webStorageEnabled":true}}
+[debug] [Chromedriver] Changed state to 'online'
+[info] [Appium] New AndroidDriver session created successfully, session a4c91c9a-d255-46b5-afb9-24d2e38b5ca9 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1513752757246 (08:52:37 GMT+0200 (Jerusalem Standard Time))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","autoDismissAlerts":true,"platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"},"browserName":"Chrome","autoDismissAlerts":true,"platformName":"Android","deviceName":"61925e10","platformVersion":"7.1.2","deviceUDID":"61925e10","deviceScreenSize":"1080x1920","deviceModel":"A0001","deviceManufacturer":"OnePlus"}
+[info] [HTTP] <-- POST /wd/hub/session 200 30837 ms - 638 
+[info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/timeouts/implicit_wait {"ms":30000}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/timeouts/implicit_wait] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/timeouts/implicit_wait] with body: {"ms":30000}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/timeouts/implicit_wait 200 6 ms - 76 
+[info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/url {"url":"https://www.facebook.com"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/url] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/url] with body: {"url":"https://www.facebook.com"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/url 200 2184 ms - 76 
+[info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element {"using":"id","value":"m_login_email"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element] with body: {"using":"id","value":"m_login_email"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":{"ELEMENT":"0.4849044618211049-1"}}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element 200 67 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.4849044618211049-1/value {"id":"0.4849044618211049-1","value":["cyber.infom1.il@gmail.com"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.4849044618211049-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element/0.4849044618211049-1/value] with body: {"id":"0.4849044618211049-1","value":["cyber.infom1.il@gmail.com"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.4849044618211049-1/value 200 1084 ms - 76 [info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element {"using":"name","value":"pass"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element] with body: {"using":"name","value":"pass"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":{"ELEMENT":"0.4849044618211049-2"}}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element 200 123 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.4849044618211049-2/value {"id":"0.4849044618211049-2","value":["Info.Media"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.4849044618211049-2/value] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element/0.4849044618211049-2/value] with body: {"id":"0.4849044618211049-2","value":["Info.Media"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.4849044618211049-2/value 200 702 ms - 76 [info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element {"using":"name","value":"login"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element] with body: {"using":"name","value":"login"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":{"ELEMENT":"0.4849044618211049-3"}}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element 200 72 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.4849044618211049-3/click {"id":"0.4849044618211049-3"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.4849044618211049-3/click] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element/0.4849044618211049-3/click] with body: {"id":"0.4849044618211049-3"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.4849044618211049-3/click 200 318 ms - 76 [info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/elements {"using":"xpath","value":"//*[contains(text(),'Log In With One Tap')]"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/elements] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/elements] with body: {"using":"xpath","value":"//*[contains(text(),'Log In With One Tap')]"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":[{"ELEMENT":"0.8539745956191567-1"}]}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/elements 200 131 ms - 108 
+[info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element {"using":"css selector","value":"#root > div._4g33 > div > div > div._4g33._2pip > div:nth-child(2) > form > div > button"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element] with body: {"using":"css selector","value":"#root > div._4g33 > div > div > div._4g33._2pip > div:nth-child(2) > form > div > button"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":{"ELEMENT":"0.8539745956191567-2"}}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element 200 92 ms - 106 
+[info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.8539745956191567-2/click {"id":"0.8539745956191567-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.8539745956191567-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element/0.8539745956191567-2/click] with body: {"id":"0.8539745956191567-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.8539745956191567-2/click 200 3475 ms - 76 [info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element] with body: {"using":"name","value":"xc_message"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":{"ELEMENT":"0.03673098379269435-1"}}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element 200 119 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.03673098379269435-1/value {"id":"0.03673098379269435-1","value":["anyone knows me?"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.03673098379269435-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element/0.03673098379269435-1/value] with body: {"id":"0.03673098379269435-1","value":["anyone knows me?"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.03673098379269435-1/value 200 1239 ms - 76 [info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element] with body: {"using":"name","value":"view_post"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":0,"value":{"ELEMENT":"0.03673098379269435-2"}}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element 200 96 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.03673098379269435-2/click {"id":"0.03673098379269435-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.03673098379269435-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f/element/0.03673098379269435-2/click] with body: {"id":"0.03673098379269435-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a736d94beccee504fb882f6bd8dd5f4f","status":13,"value":{"message":"unknown error: Element <button type=\"submit\" value=\"Post\" class=\"_54k8 _52jh _56bs _56bu\" name=\"view_post\" id=\"u_0_2y\" data-sigil=\"touchable mtouch-composer-post-button\">...</button> is not clickable at point (331, 179). Other element would receive the click: <div class=\"_5wuq\" style=\"\" id=\"u_0_1d\" data-sigil=\"upsell_curtain\"></div>\n  (Session info: chrome=63.0.3239.111)\n  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.15063 x86_64)"}}
+[info] [JSONWP Proxy] Replacing sessionId a736d94beccee504fb882f6bd8dd5f4f with a4c91c9a-d255-46b5-afb9-24d2e38b5ca9
+[info] [HTTP] <-- POST /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9/element/0.03673098379269435-2/click 200 256 ms - 605 
+[info] [HTTP] --> DELETE /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["a4c91c9a-d255-46b5-afb9-24d2e38b5ca9"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1513752790989 (08:53:10 GMT+0200 (Jerusalem Standard Time))
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [AndroidDriver] Stopping chromedriver for context CHROMIUM
+[debug] [Chromedriver] Changed state to 'stopping'
+[debug] [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8000/wd/hub/session/a736d94beccee504fb882f6bd8dd5f4f] with no body[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"a736d94beccee504fb882f6bd8dd5f4f\",\"status\":0,\"value\":null}"
+[debug] [Chromedriver] Changed state to 'stopped'
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","input","keyevent",3][debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[info] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[info] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[info] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[info] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 43.459
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","ps"][info] [ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[info] [Appium] Removing session a4c91c9a-d255-46b5-afb9-24d2e38b5ca9 from our master session list
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1513752801576 (08:53:21 GMT+0200 (Jerusalem Standard Time))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[info] [HTTP] <-- DELETE /wd/hub/session/a4c91c9a-d255-46b5-afb9-24d2e38b5ca9 200 10590 ms - 76 [info] [HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"browserName":"Chrome","autoDismissAlerts":true,"platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"browserName":"Chrome","autoDismissAlerts":true,"platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"},null,null]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1513752824137 (08:53:44 GMT+0200 (Jerusalem Standard Time))
+[info] [Appium] Creating new AndroidDriver (v1.20.0) session
+[info] [Appium] Capabilities:
+[info] [Appium]   browserName: 'Chrome'
+[info] [Appium]   autoDismissAlerts: true
+[info] [Appium]   platformName: 'Android'
+[info] [Appium]   deviceName: 'emulator-5554'
+[info] [Appium]   platformVersion: '7.1.2'
+[debug] [AndroidDriver] AndroidDriver version: 1.20.0
+[warn] [BaseDriver] The following capabilities were provided, but are not recognized by appium: autoDismissAlerts.
+[info] [BaseDriver] Session created with session id: aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[debug] [AndroidDriver] Getting Java version[info] [AndroidDriver] Java version is: 1.8.0_144
+[info] [AndroidDriver] We're going to run a Chrome-based session
+[info] [AndroidDriver] Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
+[info] [ADB] Checking whether adb is present
+[info] [ADB] Using adb.exe from C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe
+[info] [AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[info] [AndroidDriver] Looking for a device with Android '7.1.2'
+[debug] [ADB] Setting device id to 61925e10
+[info] [ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.release"][info] [AndroidDriver] Using device: 61925e10
+[info] [ADB] Checking whether adb is present
+[info] [ADB] Using adb.exe from C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe
+[debug] [ADB] Setting device id to 61925e10
+[info] [AndroidDriver] App file was not listed, instead we're going to run com.android.chrome directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","list","packages","com.android.chrome"][info] [AndroidDriver] Starting Android session
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","wait-for-device"][debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","echo","ping"][debug] [Logcat] Starting logcat capture[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","list","packages","io.appium.settings"][debug] [ADB] App is installed
+[debug] [ADB] Getting package info for io.appium.settings
+[debug] [ADB] Getting connected devices...[warn] [ADB] Cannot read version codes of C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\io.appium.settings\app\build\outputs\apk\settings_apk-debug.apk and/or io.appium.settings. Assuming correct app version is already installed
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.sdk"][debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","dumpsys","package","io.appium.settings"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","dump","io.appium.settings"][debug] [ADB] Got the following command chunks to execute: pm,grant,io.appium.settings,android.permission.WRITE_SETTINGS,;,pm,grant,io.appium.settings,android.permission.ACCESS_MOCK_LOCATION,;
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";"][debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";"][debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","install","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"][debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","install","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"][debug] [ADB] Application 'C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-unlock\bin\unlock_apk-debug.apk' already installed. Continuing.
+[debug] [ADB] Device API level: 25
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","appops","set","io.appium.settings","android:mock_location","allow"][info] [ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.build.version.release"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","wm","size"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.product.model"][debug] [ADB] Current device property 'ro.product.model': A0001
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","getprop","ro.product.manufacturer"][debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","com.android.chrome"][debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","pm","clear","com.android.chrome"][debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","push","C:\\Users\\Amit\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"][debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","ps"][info] [ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","61925e10","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.chrome","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [UiAutomator] Moving to state 'online'
+[info] [AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","dumpsys","window"][info] [AndroidDriver] Screen already unlocked, doing nothing
+[info] [AndroidDriver] Starting a chrome-based browser session
+[debug] [AndroidDriver] A port was not given, using random port: 8000
+[debug] [Chromedriver] Changed state to 'starting'
+[info] [Chromedriver] Set chromedriver binary as: C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win\chromedriver.exe
+[info] [Chromedriver] Killing any old chromedrivers, running: FOR /F "usebackq tokens=5" %a in (`netstat -nao ^| findstr /R /C:"8000 "`) do (FOR /F "usebackq" %b in (`TASKLIST /FI "PID eq %a" ^| findstr /I chromedriver.exe`) do (IF NOT %b=="" TASKKILL /F /PID %a))
+[info] [Chromedriver] No old chromedrivers seemed to exist
+[info] [Chromedriver] Spawning chromedriver with: C:\Users\Amit\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win\chromedriver.exe --url-base=wd/hub --port=8000 --adb-port=5037[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"\",\"status\":0,\"value\":{\"build\":{\"version\":\"alpha\"},\"os\":{\"arch\":\"x86_64\",\"name\":\"Windows NT\",\"version\":\"10.0.15063\"}}}"
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8000/wd/hub/session] with body: {"desiredCapabilities":{"chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"61925e10"}}}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.28.455520 (cc17746adff54984afff480136733114c6b3704b)"},"cssSelectorsEnabled":true,"databaseEnabled":false,"handlesAlerts":true,"hasTouchScreen":true,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"pageLoadStrategy":"normal","platform":"ANDROID","rotatable":false,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"63.0.3239.111","webStorageEnabled":true}}
+[debug] [Chromedriver] Changed state to 'online'
+[info] [Appium] New AndroidDriver session created successfully, session aca69da3-2eb9-4607-b085-c4b1b6abb90c added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1513752855745 (08:54:15 GMT+0200 (Jerusalem Standard Time))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","autoDismissAlerts":true,"platformName":"Android","deviceName":"emulator-5554","platformVersion":"7.1.2"},"browserName":"Chrome","autoDismissAlerts":true,"platformName":"Android","deviceName":"61925e10","platformVersion":"7.1.2","deviceUDID":"61925e10","deviceScreenSize":"1080x1920","deviceModel":"A0001","deviceManufacturer":"OnePlus"}
+[info] [HTTP] <-- POST /wd/hub/session 200 31616 ms - 638 
+[info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/timeouts/implicit_wait {"ms":30000}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/timeouts/implicit_wait] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/timeouts/implicit_wait] with body: {"ms":30000}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/timeouts/implicit_wait 200 5 ms - 76 [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/url 200 2278 ms - 76 
+[info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element {"using":"id","value":"m_login_email"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element] with body: {"using":"id","value":"m_login_email"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":{"ELEMENT":"0.23108036414950472-1"}}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element 200 61 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.23108036414950472-1/value {"id":"0.23108036414950472-1","value":["cyber.infom1.il@gmail.com"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.23108036414950472-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element/0.23108036414950472-1/value] with body: {"id":"0.23108036414950472-1","value":["cyber.infom1.il@gmail.com"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.23108036414950472-1/value 200 1112 ms - 76 [info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element {"using":"name","value":"pass"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element] with body: {"using":"name","value":"pass"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":{"ELEMENT":"0.23108036414950472-2"}}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element 200 118 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.23108036414950472-2/value {"id":"0.23108036414950472-2","value":["Info.Media"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.23108036414950472-2/value] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element/0.23108036414950472-2/value] with body: {"id":"0.23108036414950472-2","value":["Info.Media"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.23108036414950472-2/value 200 661 ms - 76 [info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element {"using":"name","value":"login"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element] with body: {"using":"name","value":"login"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":{"ELEMENT":"0.23108036414950472-3"}}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element 200 97 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.23108036414950472-3/click {"id":"0.23108036414950472-3"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.23108036414950472-3/click] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element/0.23108036414950472-3/click] with body: {"id":"0.23108036414950472-3"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.23108036414950472-3/click 200 393 ms - 76 [info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/elements {"using":"xpath","value":"//*[contains(text(),'Log In With One Tap')]"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/elements] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/elements] with body: {"using":"xpath","value":"//*[contains(text(),'Log In With One Tap')]"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":[{"ELEMENT":"0.25587159101209145-1"}]}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/elements 200 137 ms - 109 
+[info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element {"using":"css selector","value":"#root > div._4g33 > div > div > div._4g33._2pip > div:nth-child(2) > form > div > button"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element] with body: {"using":"css selector","value":"#root > div._4g33 > div > div > div._4g33._2pip > div:nth-child(2) > form > div > button"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":{"ELEMENT":"0.25587159101209145-2"}}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element 200 80 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.25587159101209145-2/click {"id":"0.25587159101209145-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.25587159101209145-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element/0.25587159101209145-2/click] with body: {"id":"0.25587159101209145-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.25587159101209145-2/click 200 3813 ms - 76 [info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element {"using":"name","value":"xc_message"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element] with body: {"using":"name","value":"xc_message"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":{"ELEMENT":"0.41404552950052587-1"}}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element 200 90 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.41404552950052587-1/value {"id":"0.41404552950052587-1","value":["anyone knows me?"]}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.41404552950052587-1/value] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element/0.41404552950052587-1/value] with body: {"id":"0.41404552950052587-1","value":["anyone knows me?"]}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":null}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.41404552950052587-1/value 200 1318 ms - 76 [info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element {"using":"name","value":"view_post"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element] with body: {"using":"name","value":"view_post"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":0,"value":{"ELEMENT":"0.41404552950052587-2"}}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element 200 106 ms - 107 
+[info] [HTTP] --> POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.41404552950052587-2/click {"id":"0.41404552950052587-2"}
+[info] [MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.41404552950052587-2/click] to [POST http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e/element/0.41404552950052587-2/click] with body: {"id":"0.41404552950052587-2"}[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"ef673fa5444db64af2bc50d2b243288e","status":13,"value":{"message":"unknown error: Element <button type=\"submit\" value=\"Post\" class=\"_54k8 _52jh _56bs _56bu\" name=\"view_post\" id=\"u_0_2y\" data-sigil=\"touchable mtouch-composer-post-button\">...</button> is not clickable at point (331, 179). Other element would receive the click: <div class=\"_5wuq\" style=\"\" id=\"u_0_1d\" data-sigil=\"upsell_curtain\"></div>\n  (Session info: chrome=63.0.3239.111)\n  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.15063 x86_64)"}}
+[info] [JSONWP Proxy] Replacing sessionId ef673fa5444db64af2bc50d2b243288e with aca69da3-2eb9-4607-b085-c4b1b6abb90c
+[info] [HTTP] <-- POST /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c/element/0.41404552950052587-2/click 200 260 ms - 605 [info] [HTTP] --> DELETE /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["aca69da3-2eb9-4607-b085-c4b1b6abb90c"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1513752893007 (08:54:53 GMT+0200 (Jerusalem Standard Time))
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [AndroidDriver] Stopping chromedriver for context CHROMIUM
+[debug] [Chromedriver] Changed state to 'stopping'
+[debug] [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8000/wd/hub/session/ef673fa5444db64af2bc50d2b243288e] with no body[debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"ef673fa5444db64af2bc50d2b243288e\",\"status\":0,\"value\":null}"
+[debug] [Chromedriver] Changed state to 'stopped'
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","input","keyevent",3][debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[info] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[info] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[info] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[info] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","ps"][info] [ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Getting connected devices...[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running 'C:\Users\Amit\AppData\Local\Android\Sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","61925e10","shell","am","force-stop","io.appium.unlock"][debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[info] [Appium] Removing session aca69da3-2eb9-4607-b085-c4b1b6abb90c from our master session list
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1513752897863 (08:54:57 GMT+0200 (Jerusalem Standard Time))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[info] [HTTP] <-- DELETE /wd/hub/session/aca69da3-2eb9-4607-b085-c4b1b6abb90c 200 4858 ms - 76 
